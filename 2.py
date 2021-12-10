@@ -3,9 +3,15 @@
 # 1. известно, что буквы и в этом предложении есть;
 # 2. букв и в тексте может не быть.
 
-text = 'Определить количество букв "и". И два случая'
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-index = text.find('.')
-newText = text[0:index]
+if __name__ == '__main__':
 
-print(newText.count('и'))
+
+    text = 'Определить количество букв "и". И два случая'
+
+    index = text.find('.')
+    newText = text[0:index]
+
+    print(newText.count('и'))

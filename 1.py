@@ -1,8 +1,14 @@
 # Дано слово s1. Получить слово s2, образованное нечетными буквами слова s1.
 
-wordOld = 'pirates'
-wordNew = list(wordOld)
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-del wordNew[1::2]
+if __name__ == '__main__':
 
-print(''.join(wordNew))
+
+    wordOld = 'pirates'
+    wordNew = list(wordOld)
+
+    del wordNew[1::2]
+
+    print(''.join(wordNew))
