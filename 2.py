@@ -8,10 +8,17 @@
 
 if __name__ == '__main__':
 
+    text = input("enter some text")
 
-    text = 'Определить количество букв "и". И два случая'
+    if (text.find('.') > 0):
+        index = text.find('.')
+    elif (text.find('!') > 0):
+        index = text.find('!')
+    elif (text.find('?') > 0):
+        index = text.find('?')
 
-    index = text.find('.')
-    newText = text[0:index]
-
-    print(newText.count('и'))
+    new_text = text[0:index]
+    if (new_text.count('и') > 0):
+        print(new_text.count('и'))
+    else:
+        print("not found")

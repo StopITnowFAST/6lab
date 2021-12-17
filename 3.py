@@ -5,9 +5,9 @@
 
 if __name__ == '__main__':
 
-    wordsOld = 'Удалить из предложения символы с n по m'
-    n = 7
-    m = 20
+    words_old = input("enter some text")
+    n = int(input("enter start cut")) - 1
+    m = int(input("enter finish cut"))
 
-    wordsNew = wordsOld[n:m]
-    print(wordsNew)
+    words_new = words_old[0:n] + words_old[m:]
+    print(words_new)

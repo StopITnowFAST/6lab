@@ -5,8 +5,7 @@
 
 if __name__ == '__main__':
 
-
-    word = 'heheheha'
+    word = input("enter word")
     counter = 0
 
     for i in range(len(word)):

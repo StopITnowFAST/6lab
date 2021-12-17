@@ -6,9 +6,9 @@
 if __name__ == '__main__':
 
 
-    wordOld = 'pirates'
-    wordNew = list(wordOld)
+    word_old = input("enter word")
+    word_new = list(word_old)
 
-    del wordNew[1::2]
+    del word_new[1::2]
 
-    print(''.join(wordNew))
+    print(''.join(word_new))
