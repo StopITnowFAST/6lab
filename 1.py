@@ -5,10 +5,11 @@
 
 if __name__ == '__main__':
 
-
     word_old = input("enter word")
-    word_new = list(word_old)
+    word_new = ""
+    
+    for i in range(len(word_old)):
+        if (i % 2 == 0):
+            word_new += word_old[i]
 
-    del word_new[1::2]
-
-    print(''.join(word_new))
+    print(word_new)
