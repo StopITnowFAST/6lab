@@ -5,11 +5,6 @@
 
 if __name__ == '__main__':
 
-    word_old = input("enter word")
-    word_new = ""
-    
-    for i in range(len(word_old)):
-        if (i % 2 == 0):
-            word_new += word_old[i]
-
-    print(word_new)
+    word_old = "12345"
+    word_old = word_old[::2]
+    print(word_old)
